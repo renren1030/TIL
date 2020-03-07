@@ -51,4 +51,43 @@ puts "ibc BootCamp".swapcase #=>	"IBC bOOTcAMP"
 -capitalizeメソッド（先頭の小文字を大文字に）
 ```
 puts "ruby on rails".capitalize` #=>"Ruby on rails"
-``
+```
+ブロックを使う配列のメソッド<br>
+-mapメソッド(わざわざ空の配列を作らずに新しい処理を指定することで新しい配列を作ってくれる。)
+```
+配列の要素の文字列を全て数値にする時
+array.map{|n| n.to_i}
+または
+array.map(&:to_i)
+※ただしこの書き方はブロック内で演算子を使っている、またはブロック内でメソッドの引数を渡している、
+またはブロック内で複数の文を実行している時には使えない。
+```
+Range(範囲）
+a .. b (bも含める）
+a ... b (bは含めない）
+```
+a = [1,2,3,4,5]
+a[1..3] #=>[2,3,4]
+
+a = 'abcdefg'
+a[1..3] #=>[bcd]
+```
+n以上m以下　n以上m未満
+```関係演算子を使うバージョン
+def judge?(number)
+ if 0 <= number && number < 100d
+end
+ judge(-1) #=>false
+ judge(1) #=>true
+ judge(99) #=>true
+ judge(100) #=>false
+ ```
+ ```Rangeを使うバージョン(見やすい！）
+ def judge?(number)
+  (1...100).include?(number)
+ end
+ judge(-1) #=>false
+ judge(1) #=>true
+ judge(99) #=>true
+ judge(100) #=>false
+ ```
