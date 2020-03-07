@@ -23,3 +23,32 @@ puts 'Hello,#{name}!' #=>Hello,#{name}! そのまま出力される
 name = "Alice" 
 puts 'Hello'+ name'!'#=>Hello,Alice! 式展開使わずに。見にくい。
 ```
+-絶対値にはabsメソッドを使う
+```
+1.abs #=> 1
+-10.abs #=> 10
+
+a = 10
+b = -50
+
+(a * b).abs #=> 500
+
+1.1.abs #=> 1.1
+-4.3.abs #=> 4.3
+```
+-upcaseメソッド（小文字を大文字に）
+```
+puts "hello world".upcase #=>	"HELLO WORLD"
+```
+-downcaseメソッド（大文字から小文字に）
+```
+puts "WHAT IS THIS".downcase #=>"what is this"
+```
+-swapcaseメソッド（小文字を大文字、大文字を小文字に）
+```
+puts "ibc BootCamp".swapcase #=>	"IBC bOOTcAMP"
+```
+-capitalizeメソッド（先頭の小文字を大文字に）
+```
+puts "ruby on rails".capitalize` #=>"Ruby on rails"
+``
