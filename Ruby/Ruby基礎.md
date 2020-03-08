@@ -106,3 +106,12 @@ p array.join #=>"rubypython"
 array = ['ruby', 'python','java']
 p array.join(',') #=>"ruby,python,java"
 ```
+```
+string = "a Ruby"
+puts string.split().join() #=> "aRuby"
+（stringからarrayにするためにsplitメソッドを使った）
+```
+-charsメソッド（文字列に対して使うことで一文字ずつ分解してくれる）
+```
+"Ruby".chars #=> ["R","u","b","y"]
+```
