@@ -91,3 +91,18 @@ end
  judge(99) #=>true
  judge(100) #=>false
  ```
+-indexメソッド
+（引数と一致する要素が最初に見つかった時の添字を返す）
+```
+a = [10, 20, 30, 10, 20, 30]
+a.index(30) #=> 2
+```
+-joinメソッド（配列を連結して一つの文字列にする）
+```
+array = ['ruby', 'python']
+p array.join #=>"rubypython"
+```
+```区切り文字も指定できる
+array = ['ruby', 'python','java']
+p array.join(',') #=>"ruby,python,java"
+```
