@@ -75,7 +75,7 @@ a[1..3] #=>[bcd]
 n以上m以下　n以上m未満
 ```関係演算子を使うバージョン
 def judge?(number)
- if 0 <= number && number < 100d
+ if 0 <= number && number < 100
 end
  judge(-1) #=>false
  judge(1) #=>true
