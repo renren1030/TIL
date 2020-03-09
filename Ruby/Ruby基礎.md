@@ -115,3 +115,39 @@ puts string.split().join() #=> "aRuby"
 ```
 "Ruby".chars #=> ["R","u","b","y"]
 ```
+-to.fメソッド（Integerクラスの数値をFloatクラスの数値に変換）<br>
+
+-roundメソッド（四捨五入してくれる、引数で第何位かを指定できる）
+```
+1.2345.round #=> 1
+1.2345.round(１) #=> 1.2
+1.2345.round(2) #=> 1.23
+1.2345.round(3) #=> 1.235 (四捨五入)
+```
+-整数から下一桁や二桁を取る方法
+```
+x = 123456789
+puts x % 10 #=>9
+puts x % 100 #=>89
+puts x % 1000 #=> 789
+puts x % 10000 #=> 6789
+```
+-selectメソッド
+```
+配列.select do |x|
+  条件
+end
+ 
+do..endなし
+配列.select { |x| 条件 }
+```
+```
+list = [1, 2, 3, 4, 5]
+ 
+list_new = list.select do |x|
+  x > 3
+end
+ 
+p list_new
+#=> [4, 5]
+```
