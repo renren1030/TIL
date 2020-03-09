@@ -151,3 +151,46 @@ end
 p list_new
 #=> [4, 5]
 ```
+-each_with_indexメソッド
+
+```
+配列名.each_with_index do |item, i|
+```
+```
+sports=[“サッカー”, “テニス”, “野球”]
+
+#配列sportsを用意
+
+sports.each_with_index do |item, i|
+
+puts “#{i}番目の要素は#{item}です。”
+
+end
+
+#=> 0番目の要素はサッカーです。
+
+#=> 1番目の要素はテニスです。
+
+#=> 2番目の要素は野球です。
+（i をi+1にすれば１番目から指定できる）
+```
+-each.with_indexメソッド
+```
+配列名.each.with_index(開始させたい値) do |item, i|
+```
+```
+fruites = [“リンゴ”, “メロン”, “ブドウ”]
+
+#配列fruitesを用意
+
+fruites.each.with_index(30) do |item, i|
+
+puts “#{i}番目のフルーツは#{item}です。”
+
+end
+#=> 30番目のフルーツはリンゴです。
+
+#=> 31番目のフルーツはメロンです。
+
+#=> 32番目のフルーツはブドウです。
+```
