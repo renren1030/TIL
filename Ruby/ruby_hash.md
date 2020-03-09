@@ -41,3 +41,19 @@
  {キー1:値１,キー２:値２,キー3:値3}
  ({:キー1 => 値１,:キー２ => 値２,:キー3 => 値3}と同じ）
  ```
+-ハッシュで使用頻度の高いメソッド
+・keyメソッド（ハッシュのキーを配列として返す）
+```
+currencies = {japan:"yen",us:"dollar",india:"rupee"}
+currencies.keys #=> [:japan,;us,:india]
+```
+・valueメソッド（ハッシュの値を配列として返す）
+```
+currencies = {japan:"yen",us:"dollar",india:"rupee"}
+currencies.value #=> ["yen","dollar","rupee"]
+```
+・has_key?メソッド（ハッシュの中に指定されたキーが存在するかどうか確認する）
+```
+currencies = {japan:"yen",us:"dollar",india:"rupee"}
+currencies.has_key?(:japan) #=> true
+```
