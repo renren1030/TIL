@@ -63,6 +63,12 @@ array[0,3] = []
 p array
 #["f"]
 ```
+・要素の足し算
+```
+number = [1,2,3,4]
+sum = number.inject(0){|result,n| result + n}
+sum #=>10
+```
 ・配列の要素を結合し文字列として作成
 ```
 array  = ['ruby','javascript','php','python']
