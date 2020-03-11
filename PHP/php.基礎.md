@@ -147,4 +147,42 @@ for($i=1;$<=10;$++){
   }
  ```
  ・関数
- 
+ strlen(文字列の文字数を返す関数）
+ ```
+ $language = "PHP";
+ echo strlen($language);
+ #=> 3
+```
+count(配列の要素数を返す関数）
+```
+$number = array(1,2,3);
+echo count($number);
+#=> 3
+```
+他にも色々ある
+
+・関数の作り方
+```
+function 関数名(){処理}
+()の中には引数を指定できる
+```
+関数の呼び出し方
+```
+関数名（）
+```
+```
+function sum($num1,$num2){
+echo $num1 + $num2;
+}
+sum(1,3);
+#=> 4
+```
+戻り値
+```
+function sum($num){
+return $num*$num*3;
+}
+$Pi = sum(3);
+echo $Pi;
+#=> 27
+```
