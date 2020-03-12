@@ -130,3 +130,17 @@ git config --global alias.ci commit
 git config -l
 エイリアスの一覧が見れる
 ```
+```
+git remote add リポジトリ名（よく使われるのはorigin) 追加する場所
+リポジトリの作成
+```
+```
+git remote rm リポジトリ名（よく使われるのはorigin)
+リポジトリの削除
+```
+```
+git push プッシュ先のファイル名　プッシュしたいファイル名
+ex.
+git push origin master
+(originにmasterをpushする)
+```
