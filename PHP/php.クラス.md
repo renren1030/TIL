@@ -109,4 +109,42 @@ echo "<br>";
     ホイミスライムはホイミを使った
     ホイミスライムは飛んで逃げた
 ```
+```
+<?php
+class Goblin {
+  //プロパティ
+  public $name;
+  public static $wamei = "小鬼";
+  public static $num = 0;
+ 
+  //コンストラクタ
+  public function __construct() {
+    self::$num++;
+    $this->name = "ゴブリン" . self::$num;
+  }
+ 
+  //staticメソッド
+  public static function setumei() {
+    echo "ゴブリンは最弱のモンスター";
+  }
+ 
+}
 
+Goblin::setumei();
+echo "<br>";
+echo Goblin::$wamei;
+echo "<br>";
+#=> ゴブリンは最弱のモンスター
+　　 小鬼
+   
+$gob1 = new Goblin();
+echo $gob1->name;
+echo "<br>";
+ 
+$gob2 = new Goblin();
+echo $gob2->name;
+echo "<br>";
+#=>ゴブリン１
+   ゴブリン２
+?>
+```
