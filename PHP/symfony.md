@@ -181,7 +181,7 @@ class HelloController extends AbstractController
     /**
      * @Route("/hello", name="hello")
      */
-    public function index(Request $request)
+    public function index(Request $request)//Requestクラスのインスタンスを引数にしている
     {
         $name = $request->get('name');
         $pass = $request->get('pass');
