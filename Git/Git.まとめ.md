@@ -143,4 +143,6 @@ git push プッシュ先のファイル名　プッシュしたいファイル�
 ex.
 git push origin master
 (originにmasterをpushする)
+origin :デフォルトのリポジトリ名
+master :デフォルトのブランチ名
 ```
